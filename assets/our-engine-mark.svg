@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">OUR Engine orbital mark</title>
+  <desc id="desc">A blue orbital ring surrounding a stylized letter O.</desc>
+  <defs>
+    <linearGradient id="blue" x1="76" y1="70" x2="430" y2="452" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#75E6FF"/>
+      <stop offset=".48" stop-color="#2D9DFF"/>
+      <stop offset="1" stop-color="#3156E8"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="52" y1="360" x2="461" y2="147" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3A72FF"/>
+      <stop offset=".52" stop-color="#66DFFF"/>
+      <stop offset="1" stop-color="#278BFF"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="132" fill="none" stroke="url(#blue)" stroke-width="58"/>
+  <ellipse cx="256" cy="256" rx="218" ry="83" transform="rotate(-25 256 256)" fill="none" stroke="#071326" stroke-width="47"/>
+  <ellipse cx="256" cy="256" rx="218" ry="83" transform="rotate(-25 256 256)" fill="none" stroke="url(#orbit)" stroke-width="22"/>
+  <path d="M407 160c20-25 41-42 61-48" fill="none" stroke="#75E6FF" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="468" cy="111" r="12" fill="#75E6FF"/>
+</svg>
