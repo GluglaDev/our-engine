@@ -52,11 +52,11 @@ See [ROADMAP.md](ROADMAP.md) for the current development direction. The roadmap 
 
 ## Project website
 
-The static project website is published with GitHub Pages:
+The static project website is prepared for GitHub Pages deployment:
 
-- [OUR Engine website](https://glugladev.github.io/our-engine/)
+- [Expected website address](https://glugladev.github.io/our-engine/)
 
-The website becomes available after GitHub Pages is enabled and its first deployment completes.
+The address becomes available after GitHub Pages is enabled in repository settings and the first deployment completes.
 
 ## Project model and licensing
 
