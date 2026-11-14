@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071326">
+  <meta name="description" content="OUR Engine is an experimental independent web rendering engine project written in Rust.">
+  <meta property="og:title" content="OUR Engine — Independent Web Rendering Engine">
+  <meta property="og:description" content="A different approach to the web. An experimental rendering engine developed with Rust.">
+  <meta property="og:type" content="website">
+  <title>OUR Engine — Independent Web Rendering Engine</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="config.js"></script>
+  <script defer src="site.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="OUR Engine home">
+        <img src="assets/our-engine-mark.svg" alt="" class="brand-mark">
+        <span>OUR <strong>Engine</strong></span>
+      </a>
+
+      <button class="menu-button" id="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#technology">Technology</a>
+        <a href="ROADMAP.md">Roadmap</a>
+        <a href="#support">Support</a>
+      </nav>
+
+      <a class="button button-small button-outline external-link" data-link="github" href="#" hidden>GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Experimental project · Built with Rust</p>
+        <h1>A different<br>approach to <span>the web.</span></h1>
+        <p class="hero-lead">OUR Engine is an experimental, independent web rendering engine written in Rust. We are exploring how web content can be parsed, styled, laid out and rendered without embedding an established browser engine.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#roadmap">Explore the roadmap <span aria-hidden="true">→</span></a>
+          <a class="button button-outline external-link" data-link="github" href="#" hidden>View the project on GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="fine-print">Early-stage software. Not a replacement for mainstream browsers.</p>
+      </div>
+
+      <div class="hero-visual" aria-label="OUR Engine orbital logo">
+        <div class="visual-grid" aria-hidden="true"></div>
+        <div class="visual-orbit orbit-one" aria-hidden="true"></div>
+        <div class="visual-orbit orbit-two" aria-hidden="true"></div>
+        <div class="visual-core">
+          <img src="assets/our-engine-mark.svg" alt="OUR Engine orbital logo">
+        </div>
+        <div class="visual-label label-top">INDEPENDENT RENDERING</div>
+        <div class="visual-label label-bottom">RUST · HTML · CSS · LAYOUT</div>
+        <span class="visual-star star-one" aria-hidden="true"></span>
+        <span class="visual-star star-two" aria-hidden="true"></span>
+        <span class="visual-star star-three" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section class="principles">
+      <div class="container principle-grid">
+        <article class="principle"><span>01</span><div><h2>Independent by design</h2><p>No Chromium, WebKit, Gecko or embedded WebView.</p></div></article>
+        <article class="principle"><span>02</span><div><h2>Written in Rust</h2><p>A systems-language foundation for experimentation.</p></div></article>
+        <article class="principle"><span>03</span><div><h2>Built selectively in public</h2><p>Public project resources; selected core components may remain proprietary.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">01 / About the project</p>
+        <h2>Small steps.<br><span>Independent foundations.</span></h2>
+      </div>
+      <div class="about-grid">
+        <p class="section-intro">OUR Engine is being developed from an experimental prototype. The current focus is the rendering pipeline: understanding HTML, applying basic CSS rules, calculating layout and drawing pixels to a window.</p>
+        <aside class="status-card">
+          <span class="card-label">CURRENT STATUS</span>
+          <strong>Early experimental prototype</strong>
+          <p>HTML parsing, a simplified DOM, basic CSS handling, preliminary box-model calculations and text rendering are under development. Modern website compatibility is not yet available.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section container" id="technology">
+      <div class="section-heading">
+        <p class="eyebrow">02 / Technology</p>
+        <h2>A rendering engine,<br><span>not a browser wrapper.</span></h2>
+      </div>
+      <div class="technology-grid">
+        <article class="technology-card"><span class="technology-symbol">R</span><h3>Rust</h3><p>The primary implementation language for the experimental engine.</p></article>
+        <article class="technology-card"><span class="technology-symbol">⌘</span><h3>HTML parsing</h3><p>HTML input is parsed with html5ever and represented in a simplified DOM.</p></article>
+        <article class="technology-card"><span class="technology-symbol">▦</span><h3>CSS & layout</h3><p>A custom, experimental CSS and layout implementation is being expanded incrementally.</p></article>
+        <article class="technology-card"><span class="technology-symbol">◫</span><h3>Text & graphics</h3><p>Text rasterization and framebuffer drawing form the current output path.</p></article>
+      </div>
+      <p class="technology-note">The prototype uses supporting libraries such as html5ever, markup5ever_rcdom, fontdue, minifb and ureq. These are not embedded browser engines.</p>
+    </section>
+
+    <section class="section container" id="roadmap">
+      <div class="section-heading heading-with-link">
+        <div><p class="eyebrow">03 / Development plan</p><h2>What comes <span>next.</span></h2></div>
+        <a class="text-link" href="ROADMAP.md">Read the full roadmap <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="roadmap-list">
+        <article class="roadmap-item current"><span class="roadmap-index">NOW</span><div><h3>Layout & typography foundations</h3><p>Strengthen box-model behavior, text measurement, line wrapping and alignment.</p></div><span class="roadmap-state">Current focus</span></article>
+        <article class="roadmap-item"><span class="roadmap-index">NEXT</span><div><h3>Images & scrolling</h3><p>Add image decoding and a reliable page viewport with vertical scrolling.</p></div><span class="roadmap-state">Planned</span></article>
+        <article class="roadmap-item"><span class="roadmap-index">03</span><div><h3>Interaction & navigation</h3><p>Introduce links, pointer interaction, forms and navigation history.</p></div><span class="roadmap-state">Planned</span></article>
+        <article class="roadmap-item"><span class="roadmap-index">04</span><div><h3>JavaScript exploration</h3><p>Evaluate a JavaScript runtime and define a DOM interaction model.</p></div><span class="roadmap-state">Research</span></article>
+        <article class="roadmap-item"><span class="roadmap-index">05</span><div><h3>Standards & compatibility</h3><p>Expand standards coverage through tests, diagnostics and measured compatibility work.</p></div><span class="roadmap-state">Long-term</span></article>
+      </div>
+      <p class="fine-print">The roadmap is directional, not a delivery promise. Priorities may change as implementation and testing reveal new requirements.</p>
+    </section>
+
+    <section class="support-section" id="support">
+      <div class="container support-inner">
+        <div>
+          <p class="eyebrow">04 / Support independent development</p>
+          <h2>Help us build<br><span>something different.</span></h2>
+          <p class="support-copy">OUR Engine is an independent experiment. As the project matures, voluntary contributions may help fund development, testing infrastructure and documentation.</p>
+        </div>
+        <div class="support-card">
+          <div class="support-heart" aria-hidden="true">♡</div>
+          <h3>Support OUR Engine</h3>
+          <p>Voluntary support options will appear here when the project's receiving accounts are ready.</p>
+          <a class="button button-primary external-link" data-link="sponsors" href="#" hidden>Become a sponsor <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline external-link" data-link="kofi" href="#" hidden>Support on Ko-fi <span aria-hidden="true">↗</span></a>
+          <p class="support-pending" id="support-pending">No donations are being collected through this website yet.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#top"><img src="assets/our-engine-mark.svg" alt="" class="brand-mark"><span>OUR <strong>Engine</strong></span></a>
+      <p>Independent. Experimental. Built with Rust.</p>
+      <span class="footer-note">© <span id="year">2026</span> OUR Engine project</span>
+    </div>
+  </footer>
+</body>
+</html>
